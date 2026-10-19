@@ -1,0 +1,23 @@
+package sagar;
+
+class Person {
+    int age;
+    String name;
+
+    Person(int age, String name) {
+        this.age = age;
+        this.name = name;
+    }
+
+    void display() {
+        System.out.println("Name: " + name);
+        System.out.println("Age: " + age);
+    }
+}
+
+public class Program13 {
+    public static void main(String[] args) {
+        Person p = new Person(19, "Sagar");
+        p.display();
+    }
+}
