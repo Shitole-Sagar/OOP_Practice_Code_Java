@@ -1,0 +1,45 @@
+package sagar;
+
+class Complex {
+    double real;
+    double imaginary;
+
+    Complex() {
+        real = 0;
+        imaginary = 0;
+    }
+
+    Complex(double real, double imaginary) {
+        this.real = real;
+        this.imaginary = imaginary;
+    }
+
+    Complex add(Complex c) {
+        return new Complex(
+            real + c.real,
+            imaginary + c.imaginary
+        );
+    }
+
+    void display() {
+        System.out.println(real + " + " + imaginary + "i");
+    }
+}
+
+public class Program20 {
+    public static void main(String[] args) {
+        Complex c1 = new Complex(5, 3);
+        Complex c2 = new Complex(2, 4);
+
+        Complex result = c1.add(c2);
+
+        System.out.print("First complex number: ");
+        c1.display();
+
+        System.out.print("Second complex number: ");
+        c2.display();
+
+        System.out.print("Addition result: ");
+        result.display();
+    }
+}
