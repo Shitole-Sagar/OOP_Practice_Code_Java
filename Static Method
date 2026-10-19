@@ -1,0 +1,13 @@
+package sagar;
+
+class MathOperation {
+    static int square(int n) {
+        return n * n;
+    }
+}
+
+public class Program15 {
+    public static void main(String[] args) {
+        System.out.println("Square of 5 = " + MathOperation.square(5));
+    }
+}
