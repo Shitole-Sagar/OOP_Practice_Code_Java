@@ -1,0 +1,29 @@
+package sagar;
+
+class StudentRecord {
+    int rollNo;
+    String name;
+
+    StudentRecord(int rollNo, String name) {
+        this.rollNo = rollNo;
+        this.name = name;
+    }
+
+    void display() {
+        System.out.println("Roll No: " + rollNo + ", Name: " + name);
+    }
+}
+
+public class Program18 {
+    public static void main(String[] args) {
+        StudentRecord[] students = new StudentRecord[3];
+
+        students[0] = new StudentRecord(1, "Amit");
+        students[1] = new StudentRecord(2, "Rahul");
+        students[2] = new StudentRecord(3, "Sagar");
+
+        for (int i = 0; i < students.length; i++) {
+            students[i].display();
+        }
+    }
+}
