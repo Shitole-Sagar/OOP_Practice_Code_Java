@@ -1,0 +1,25 @@
+package sagar;
+
+class Employee {
+    private int id;
+    private String name;
+
+    public void setData(int i, String n) {
+        id = i;
+        name = n;
+    }
+
+    public void display() {
+        System.out.println("Employee ID: " + id);
+        System.out.println("Employee Name: " + name);
+    }
+}
+
+public class Program11 {
+    public static void main(String[] args) {
+        Employee e = new Employee();
+
+        e.setData(101, "Amit");
+        e.display();
+    }
+}
