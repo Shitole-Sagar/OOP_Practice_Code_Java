@@ -1,0 +1,25 @@
+package sagar;
+
+class Student {
+    int rollNo;
+    String name;
+    String branch;
+
+    void display() {
+        System.out.println("Roll Number: " + rollNo);
+        System.out.println("Name: " + name);
+        System.out.println("Branch: " + branch);
+    }
+}
+
+public class Program7 {
+    public static void main(String[] args) {
+        Student s = new Student();
+
+        s.rollNo = 101;
+        s.name = "Sagar";
+        s.branch = "AI and ML";
+
+        s.display();
+    }
+}
