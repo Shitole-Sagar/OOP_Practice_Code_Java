@@ -1,0 +1,22 @@
+package sagar;
+
+class Rectangle {
+    int length;
+    int breadth;
+
+    void calculateArea() {
+        int area = length * breadth;
+        System.out.println("Area of rectangle = " + area);
+    }
+}
+
+public class Program6 {
+    public static void main(String[] args) {
+        Rectangle r = new Rectangle();
+
+        r.length = 10;
+        r.breadth = 5;
+
+        r.calculateArea();
+    }
+}
